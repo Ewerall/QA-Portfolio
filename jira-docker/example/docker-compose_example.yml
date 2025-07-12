@@ -1,0 +1,42 @@
+version: '3.8'
+services:
+  postgres:
+    image: postgres:11  
+    container_name: jira-postgres
+    environment:
+      POSTGRES_DB: #sql name
+      POSTGRES_USER: #sql_user_name
+      POSTGRES_PASSWORD: #password
+      TZ: Europe/Moscow #or your time in tz
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - jira-network
+    restart: unless-stopped
+
+  jira:
+    build: ./jira-custom 
+    container_name: jira-app #or your name of container
+    image: custom-jira:8.12.0
+    depends_on:
+      - postgres
+    environment:
+      ATL_JDBC_URL: "jdbc:postgresql://postgres:5432/jiradb"
+      ATL_JDBC_USER: #name
+      ATL_JDBC_PASSWORD: #password
+      TZ: Europe/Moscow #your time in tz
+    volumes:
+      - jira_data:/var/atlassian/application-data/jira
+    ports:
+      - "8080:8080"
+    networks:
+      - jira-network
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+  jira_data:
+
+networks:
+  jira-network:
+    driver: bridge

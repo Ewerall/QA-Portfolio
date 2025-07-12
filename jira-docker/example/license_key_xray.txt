@@ -1,0 +1,14 @@
+Description=Jira\: Commercial
+CreationDate=2019-01-01
+com.xpandit.plugins.xray.active=true
+Evaluation=false
+com.xpandit.plugins.xray.LicenseTypeName=COMMERCIAL
+MaintenanceExpiryDate=2099-01-01
+com.xpandit.plugins.xray.NumberOfClusterNodes=0
+Organisation=chungkol.com
+ServerID= #Add your Server ID
+SEN=L15762276
+LicenseID=LIDSEN-L15762276
+com.xpandit.plugins.xray.NumberOfUsers=-1
+LicenseExpiryDate=2099-01-01
+PurchaseDate=2019-01-01
