@@ -1,0 +1,344 @@
+{
+	"info": {
+		"_postman_id": "4a6aebcd-8970-46b3-8e5f-4227610fc354",
+		"name": "QA test",
+		"description": "Just testing chai.js and postman requests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46230906",
+		"_collection_link": "https://rubercore.postman.co/workspace/Rubercore's-Workspace~58594d5c-e08f-497a-87dc-5cab2d0265ee/collection/46230906-4a6aebcd-8970-46b3-8e5f-4227610fc354?action=share&source=collection_link&creator=46230906"
+	},
+	"item": [
+		{
+			"name": "users.typicode",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Check email format\", () => {\r",
+							"    const users = pm.response.json();\r",
+							"    users.forEach(user => {\r",
+							"        pm.expect(user.email).to.match(/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/);\r",
+							"    });\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/users",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post.typicode",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const response = pm.response.json(); \r",
+							"pm.collectionVariables.set(\"newPostId\", 1); // we can use response.id but its fake"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"packages": {},
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Test Post\",\r\n    \"body\": \"brrrr br brrrr\",\r\n    \"userId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/posts",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put.typicode",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"New test post\",\r\n    \"body\": \"we update it\",\r\n    \"userId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/posts/{{newPostId}}",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"posts",
+						"{{newPostId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete.typicode",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/posts/{{newPostId}}",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"posts",
+						"{{newPostId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteget.typicode",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/posts/{{newPostId}}",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"posts",
+						"{{newPostId}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "readthis",
+					"originalRequest": {
+						"method": "GET",
+						"header": []
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "if this be real API this can work\r\nbut its fake\r\nand we didnt actually delete anything :("
+				}
+			]
+		},
+		{
+			"name": "csvtest",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status 200 for user \" + pm.variables.get(\"userId\"), () => {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Verify user name for ID \" + pm.variables.get(\"userId\"), () => {\r",
+							"    const response = pm.response.json();\r",
+							"    pm.expect(response.name).to.eql(pm.variables.get(\"expectedName\"));\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/users/{{userId}}",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"users",
+						"{{userId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "jsontest",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status 200 for user \" + pm.variables.get(\"userId\"), () => {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Verify user name for ID \" + pm.variables.get(\"userId\"), () => {\r",
+							"    const response = pm.response.json();\r",
+							"    pm.expect(response.name).to.eql(pm.variables.get(\"expectedName\"));\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"const testData = [\r",
+							"    {userId: 1, expectedName: \"Leanne Graham\"},\r",
+							"    {userId: 2, expectedName: \"Ervin Howell\"},\r",
+							"    {userId: 3, expectedName: \"Clementine Bauch\"}\r",
+							"];\r",
+							"\r",
+							"pm.collectionVariables.set(\"testData\", JSON.stringify(testData));\r",
+							"\r",
+							"const iteration = pm.info.iteration;\r",
+							"const currentData = testData[iteration];\r",
+							"\r",
+							"pm.variables.set(\"userId\", currentData.userId);\r",
+							"pm.variables.set(\"expectedName\", currentData.expectedName);"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/users/{{userId}}",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"users",
+						"{{userId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "invalidtest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/invalid",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"invalid"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "token",
+			"value": ""
+		},
+		{
+			"key": "baseUrl",
+			"value": "https://postman-integration-testing.glitch.me/"
+		},
+		{
+			"key": "newPostId",
+			"value": ""
+		},
+		{
+			"key": "testData",
+			"value": ""
+		}
+	]
+}
