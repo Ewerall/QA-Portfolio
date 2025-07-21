@@ -10,7 +10,7 @@ def api_headers():
     return {"x-api-key": "reqres-free-v1"}
 
 @pytest.fixture
-def new_user_data():
+def user_data():
     return {"name": "Vasya", "job": "QA Engineer"}
 
 @pytest.fixture(scope="session")
