@@ -2,10 +2,12 @@ name: Run API Tests
 
 on:
   push:
+    branches: [ "main" ]
     paths:
-      - 'QA-portfolio/Auto testing/API Tests/test_reqres.py'
-      - 'QA-portfolio/Auto testing/API Tests/conftest.py'
+      - 'QA-portfolio/Auto-testing/API-Tests/test_reqres.py'
+      - 'QA-portfolio/Auto-testing/API-Tests/conftest.py'
   pull_request:
+    branches: [ "main" ]
     paths:
       - 'QA-portfolio/Auto testing/API Tests/test_reqres.py'
       - 'QA-portfolio/Auto testing/API Tests/conftest.py'
@@ -30,12 +32,12 @@ jobs:
         pip install pytest requests allure-pytest
 
     - name: Run API tests
-      working-directory: ./QA-portfolio/Auto\ testing/API\ Tests
+      working-directory: ./QA-portfolio/Auto-testing/API-Tests
       run: |
         pytest -v test_reqres.py --alluredir=allure-results
 
     - name: Generate Allure report
-      working-directory: ./QA-portfolio/Auto\ testing/API\ Tests
+      working-directory: ./QA-portfolio/Auto-testing/API-Tests
       run: |
         allure generate allure-results --clean -o allure-report
 
@@ -44,4 +46,4 @@ jobs:
       if: always()
       with:
         name: allure-api-report
-        path: QA-portfolio/Auto\ testing/API\ Tests/allure-report
+        path: QA-portfolio/Auto-testing/API-Tests/allure-report
