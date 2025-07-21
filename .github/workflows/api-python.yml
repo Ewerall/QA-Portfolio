@@ -4,13 +4,13 @@ on:
   push:
     branches: [ "main" ]
     paths:
-      - 'QA-portfolio/Auto-testing/API-Tests/test_reqres.py'
-      - 'QA-portfolio/Auto-testing/API-Tests/conftest.py'
+      - 'Auto-testing/API-Tests/test_reqres.py'
+      - 'Auto-testing/API-Tests/conftest.py'
   pull_request:
     branches: [ "main" ]
     paths:
-      - 'QA-portfolio/Auto testing/API Tests/test_reqres.py'
-      - 'QA-portfolio/Auto testing/API Tests/conftest.py'
+      - 'Auto-testing/API-Tests/test_reqres.py'
+      - 'Auto-testing/API-Tests/conftest.py'
 
 jobs:
   api-tests:

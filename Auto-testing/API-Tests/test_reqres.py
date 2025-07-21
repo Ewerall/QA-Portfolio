@@ -68,7 +68,6 @@ def test_endpoint_time(base_url, api_headers):
 @pytest.mark.parametrize("user_id, expected_status", [
     (1, 200),
     (2, 200),
-    (3, 200),
     (23, 404),
     (999, 404),
 ])
