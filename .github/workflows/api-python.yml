@@ -31,19 +31,28 @@ jobs:
         python -m pip install --upgrade pip
         pip install pytest requests allure-pytest
 
+    - name: Install Allure CLI
+      run: |
+        sudo apt-get update
+        sudo apt-get install default-jre -y
+        curl -o allure-2.27.0.tgz -Ls https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.27.0/allure-commandline-2.27.0.tgz
+        sudo tar -zxvf allure-2.27.0.tgz -C /opt/
+        sudo ln -s /opt/allure-2.27.0/bin/allure /usr/bin/allure
+        allure --version
+
     - name: Run API tests
-      working-directory: ./QA-portfolio/Auto-testing/API-Tests
+      working-directory: Auto-testing/API-Tests
       run: |
         pytest -v test_reqres.py --alluredir=allure-results
 
     - name: Generate Allure report
-      working-directory: ./QA-portfolio/Auto-testing/API-Tests
+      working-directory: Auto-testing/API-Tests
       run: |
         allure generate allure-results --clean -o allure-report
 
     - name: Upload Allure report
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       if: always()
       with:
         name: allure-api-report
-        path: QA-portfolio/Auto-testing/API-Tests/allure-report
+        path: Auto-testing/API-Tests/allure-report
