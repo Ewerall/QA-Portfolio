@@ -1,0 +1,2 @@
+Create User Response: 201 - {"name":"Vasya","job":"QA Engineer","id":"433","createdAt":"2025-07-21T21:05:20.423Z"}
+Delete User Response: 204

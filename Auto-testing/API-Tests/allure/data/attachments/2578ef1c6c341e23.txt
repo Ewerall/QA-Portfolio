@@ -1,0 +1,2 @@
+Create User Response: 201 - {"name":"Vasya","job":"QA Engineer","id":"837","createdAt":"2025-07-21T21:05:19.772Z"}
+Update User Response: 200 - {"job":"Senior QA","updatedAt":"2025-07-21T21:05:20.073Z"}
