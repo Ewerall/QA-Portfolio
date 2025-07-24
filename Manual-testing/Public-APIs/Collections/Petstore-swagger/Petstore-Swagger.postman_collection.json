@@ -1,0 +1,189 @@
+{
+	"info": {
+		"_postman_id": "85fa1666-a231-45f1-9f16-d69f8e500078",
+		"name": "Petstore/Swagger",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46230906",
+		"_collection_link": "https://rubercore.postman.co/workspace/Rubercore's-Workspace~58594d5c-e08f-497a-87dc-5cab2d0265ee/collection/46230906-85fa1666-a231-45f1-9f16-d69f8e500078?action=share&source=collection_link&creator=46230906"
+	},
+	"item": [
+		{
+			"name": "newpet",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.collectionVariables.set(\"petid\", pm.response.json().id);"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 123456789,\r\n  \"category\": {\"id\": 1, \"name\": \"dogs\"},\r\n  \"name\": \"Muhtar\",\r\n  \"photoUrls\": [\"https://example.com/muhtar.jpg\"],\r\n  \"tags\": [{\"id\": 1, \"name\": \"friendly\"}],\r\n  \"status\": \"available\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/pet",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"pet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getnewpet",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/pet/123456789",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"pet",
+						"123456789"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "putnewpet",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 123456789,\r\n  \"name\": \"Muhtar Updated\",\r\n  \"status\": \"sold\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/pet",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"pet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletepet",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/pet/123456789",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"pet",
+						"123456789"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "invalidpet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": \"roar\",\r\n  \"category\": {\"id\": 1, \"name\": \"dogs\"},\r\n  \"name\": \"Gragorot\",\r\n  \"photoUrls\": [\"https://example.com/gragorot.jpg\"],\r\n  \"tags\": [{\"id\": 1, \"name\": \"bad\"}],\r\n  \"status\": \"available\"\r\n}"
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/pet",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"pet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getinvalidpet",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/pet/99999999999",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"pet",
+						"99999999999"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "Petstore",
+			"value": "https://petstore.swagger.io",
+			"type": "default"
+		},
+		{
+			"key": "Petstore",
+			"value": ""
+		},
+		{
+			"key": "petid",
+			"value": ""
+		}
+	]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite id="0" hostname="https://petstore.swagger.io" package="" name="newpet" tests="0" failures="0" errors="0" timestamp="2025-07-24T19:58:46.723" time="1.030"/>
+  <testsuite id="1" hostname="https://petstore.swagger.io" package="" name="getnewpet" tests="0" failures="0" errors="0" timestamp="2025-07-24T19:58:47.753" time="0.176"/>
+  <testsuite id="2" hostname="https://petstore.swagger.io" package="" name="putnewpet" tests="0" failures="0" errors="0" timestamp="2025-07-24T19:58:47.929" time="0.178"/>
+  <testsuite id="3" hostname="https://petstore.swagger.io" package="" name="deletepet" tests="0" failures="0" errors="0" timestamp="2025-07-24T19:58:48.107" time="0.177"/>
+  <testsuite id="4" hostname="https://petstore.swagger.io" package="" name="invalidpet" tests="0" failures="0" errors="0" timestamp="2025-07-24T19:58:48.284" time="0.176"/>
+  <testsuite id="5" hostname="https://petstore.swagger.io" package="" name="getinvalidpet" tests="0" failures="0" errors="0" timestamp="2025-07-24T19:58:48.460" time="0.175"/>
+</testsuites>

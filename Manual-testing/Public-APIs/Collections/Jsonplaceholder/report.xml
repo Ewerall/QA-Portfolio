@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite id="0" hostname="https://jsonplaceholder.typicode.com" package="" name="users.typicode" tests="1" failures="0" errors="0" timestamp="2025-07-24T20:02:54.809" time="0.242">
+    <testcase classname=" / users.typicode" name="Check email format" time="0.242"/>
+  </testsuite>
+  <testsuite id="1" hostname="https://jsonplaceholder.typicode.com" package="" name="post.typicode" tests="0" failures="0" errors="0" timestamp="2025-07-24T20:02:55.051" time="0.178"/>
+  <testsuite id="2" hostname="https://jsonplaceholder.typicode.com" package="" name="put.typicode" tests="0" failures="0" errors="0" timestamp="2025-07-24T20:02:55.229" time="0.418"/>
+  <testsuite id="3" hostname="https://jsonplaceholder.typicode.com" package="" name="delete.typicode" tests="0" failures="0" errors="0" timestamp="2025-07-24T20:02:55.647" time="0.395"/>
+  <testsuite id="4" hostname="https://jsonplaceholder.typicode.com" package="" name="deleteget.typicode" tests="0" failures="0" errors="0" timestamp="2025-07-24T20:02:56.042" time="0.064"/>
+  <testsuite id="5" hostname="https://jsonplaceholder.typicode.com" package="" name="csvtest" tests="2" failures="0" errors="0" timestamp="2025-07-24T20:02:56.106" time="0.402">
+    <testcase classname=" / csvtest" name="Status 200 for user undefined" time="0.201">
+      <failure type="AssertionError" message="expected response to have status code 200 but got 404">
+        <![CDATA[AssertionError: expected response to have status code 200 but got 404
+   at Object.eval sandbox-script.js:1:6)]]>
+      </failure>
+    </testcase>
+    <testcase classname=" / csvtest" name="Verify user name for ID undefined" time="0.201"/>
+  </testsuite>
+  <testsuite id="6" hostname="https://jsonplaceholder.typicode.com" package="" name="jsontest" tests="2" failures="0" errors="0" timestamp="2025-07-24T20:02:56.508" time="0.063">
+    <testcase classname=" / jsontest" name="Pre-request Script">
+      <error type="SyntaxError" message="Identifier 'iteration' has already been declared">
+        <![CDATA[]]>
+      </error>
+    </testcase>
+    <testcase classname=" / jsontest" name="Status 200 for user undefined" time="0.032">
+      <failure type="AssertionError" message="expected response to have status code 200 but got 404">
+        <![CDATA[AssertionError: expected response to have status code 200 but got 404
+   at Object.eval sandbox-script.js:1:7)]]>
+      </failure>
+    </testcase>
+    <testcase classname=" / jsontest" name="Verify user name for ID undefined" time="0.032"/>
+  </testsuite>
+  <testsuite id="7" hostname="https://jsonplaceholder.typicode.com" package="" name="invalidtest" tests="0" failures="0" errors="0" timestamp="2025-07-24T20:02:56.571" time="0.424"/>
+</testsuites>

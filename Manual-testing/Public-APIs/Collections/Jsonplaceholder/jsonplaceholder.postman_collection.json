@@ -111,7 +111,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://jsonplaceholder.typicode.com/posts/{{newPostId}}",
+					"raw": "https://jsonplaceholder.typicode.com/posts/1",
 					"protocol": "https",
 					"host": [
 						"jsonplaceholder",
@@ -120,7 +120,7 @@
 					],
 					"path": [
 						"posts",
-						"{{newPostId}}"
+						"1"
 					]
 				}
 			},
@@ -132,7 +132,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "https://jsonplaceholder.typicode.com/posts/{{newPostId}}",
+					"raw": "https://jsonplaceholder.typicode.com/posts/1",
 					"protocol": "https",
 					"host": [
 						"jsonplaceholder",
@@ -141,7 +141,7 @@
 					],
 					"path": [
 						"posts",
-						"{{newPostId}}"
+						"1"
 					]
 				}
 			},
@@ -153,7 +153,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://jsonplaceholder.typicode.com/posts/{{newPostId}}",
+					"raw": "https://jsonplaceholder.typicode.com/posts/1",
 					"protocol": "https",
 					"host": [
 						"jsonplaceholder",
@@ -162,7 +162,7 @@
 					],
 					"path": [
 						"posts",
-						"{{newPostId}}"
+						"1"
 					]
 				}
 			},
