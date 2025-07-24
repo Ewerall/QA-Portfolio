@@ -7,12 +7,73 @@ QA Engineer. Специализация: комплексное **end-to-end т�
 | **Категория**       | **Детализация**                                                                 |
 |----------------------|---------------------------------------------------------------------------------|
 | **Тестирование**     | • Ручное (Smoke, Regression, E2E, Usability, functional, nonfunctional) <br>• Автотесты (Pytest, request) |
-| **Инструменты**      | • **Jira + XRay:** Полный цикл управления тестированием (test-case, test-run, привязка баг-репортов) <br>• Postman (коллекции, скрипты на JS) <br>• Chrome DevTools (Elements, Network, Console) <br>• Docker (развертывание Jira/PostgreSQL) <br>• Git/GitHub Actions
+| **Инструменты**      | • **Jira + XRay:** Полный цикл управления тестированием (test-case, test-run, привязка баг-репортов) <br>• **Postman + Newman**(коллекции, скрипты на JS, CRUD запросы, отчеты) <br>• Chrome DevTools (Elements, Network, Console) <br>• Docker (развертывание Jira/PostgreSQL) <br>• Git/GitHub Actions <br>• Swagger <br>• Grafana <br>• Testrail TMS <br>• Kafka <br>• Selenium
 | **Тест-дизайн**      | • Эквивалентное разделение (проверка классов значений) <br>• Анализ граничных значений (тестирование на границах) <br>• Таблицы решений (комбинации действие/результат) <br>• Попарное тестирование (пары параметров) <br>• Предугадывание ошибок (Error Guessing)| 
 | **Программирование** | • Python (pytest, requests, etc.) <br>• JavaScript |
 | **Базы данных**      | • PostgreSQL <br>• MySQL |
 | **Процессы**         | • SDLC/STLC <br>• Agile (Scrum) <br>• REST API <br>• CI/CD основы | 
 
+
+## Структура репозитория
+
+    QA-Portfolio
+    ├── .github
+    │   └── workflows
+    │       └── api-python.yml
+    ├── Auto-testing
+    │   ├── API-Tests
+    │   │   ├── allure [Allure report directory]
+    │   │   ├── allure_report.png
+    │   │   ├── conftest.py
+    │   │   ├── README.md
+    │   │   └── test_reqres.py
+    │   └── Unit-Tests
+    │       ├── calc_test*.py
+    │       ├── README.md
+    │       └── Screenshots [3 png]
+    ├── Documentation
+    │   ├── calc_req.pdf
+    │   └── Test-Design
+    │       ├── README.md
+    │       └── TestDesign.md
+    ├── Infrastructure
+    │   ├── CI-CD
+    │   │   ├── calc_project_cicd.png
+    │   │   ├── python-tests.yml
+    │   │   └── README.md
+    │   └── Jira-Docker
+    │       ├── example [5 config files]
+    │       ├── Readme.md
+    │       └── screenshots [2 png]
+    ├── LICENSE
+    ├── Manual-testing
+    │   ├── Calculator-Project
+    │   │   ├── Bug-reports [8 bug reports]
+    │   │   ├── Other [10 misc files]
+    │   │   ├── README.md
+    │   │   ├── Requirements
+    │   │   │   └── v1.0 [3 requirement specs]
+    │   │   ├── Test-cases
+    │   │   │   ├── V1.0 [6 test case categories]
+    │   │   │   └── V1.1 [5 test case categories]
+    │   │   └── Test-execution
+    │   │       ├── V1.0 [7 execution sets]
+    │   │       └── V1.1 [9 execution sets]
+    │   └── Public-APIs
+    │       ├── Collections
+    │       │   ├── GitAuth [Postman collection]
+    │       │   ├── Jsonplaceholder [Postman collection]
+    │       │   └── Petstore-swagger [Postman collection]
+    │       ├── README.md
+    │       └── Screenshots
+    │           ├── GitAuth [6 screenshots]
+    │           ├── Jsonplaceholder [9 screenshots]
+    │           └── Petstore-Swagger [7 screenshots]
+    ├── README.md
+    └── SQL
+        ├── *.sql [3 SQL scripts]
+        ├── README.md
+        └── screenshots [4 report screenshots]
 
 ## Проекты  
 
@@ -66,7 +127,7 @@ QA Engineer. Специализация: комплексное **end-to-end т�
 ## Актуальные навыки  
 | **Осваиваю**                | **Планирую**             |  
 |-----------------------------|--------------------------|  
-| • Автоматизация UI (Selenium WebDriver) <br>• Автоматизация API (requests, pytest) <br>• CI/CD | • Performance testing (k6) <br>• Kubernetes для тестовых сред |  
+| • Автоматизация UI (Selenium WebDriver) <br>• Автоматизация API (requests, pytest) <br>• CI/CD <br>• Kafka| • Performance testing (k6) <br>• Kubernetes для тестовых сред |  
 
 ## Контакты  
 -  **Email:** starere@mail.com  
