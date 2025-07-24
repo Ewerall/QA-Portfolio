@@ -14,6 +14,67 @@ QA Engineer. Специализация: комплексное **end-to-end т�
 | **Процессы**         | • SDLC/STLC <br>• Agile (Scrum) <br>• REST API <br>• CI/CD основы | 
 
 
+## Структура репозитория
+
+    QA-Portfolio
+    ├── .github
+    │   └── workflows
+    │       └── api-python.yml
+    ├── Auto-testing
+    │   ├── API-Tests
+    │   │   ├── allure [Allure report directory]
+    │   │   ├── allure_report.png
+    │   │   ├── conftest.py
+    │   │   ├── README.md
+    │   │   └── test_reqres.py
+    │   └── Unit-Tests
+    │       ├── calc_test*.py
+    │       ├── README.md
+    │       └── Screenshots [3 png]
+    ├── Documentation
+    │   ├── calc_req.pdf
+    │   └── Test-Design
+    │       ├── README.md
+    │       └── TestDesign.md
+    ├── Infrastructure
+    │   ├── CI-CD
+    │   │   ├── calc_project_cicd.png
+    │   │   ├── python-tests.yml
+    │   │   └── README.md
+    │   └── Jira-Docker
+    │       ├── example [5 config files]
+    │       ├── Readme.md
+    │       └── screenshots [2 png]
+    ├── LICENSE
+    ├── Manual-testing
+    │   ├── Calculator-Project
+    │   │   ├── Bug-reports [8 bug reports]
+    │   │   ├── Other [10 misc files]
+    │   │   ├── README.md
+    │   │   ├── Requirements
+    │   │   │   └── v1.0 [3 requirement specs]
+    │   │   ├── Test-cases
+    │   │   │   ├── V1.0 [6 test case categories]
+    │   │   │   └── V1.1 [5 test case categories]
+    │   │   └── Test-execution
+    │   │       ├── V1.0 [7 execution sets]
+    │   │       └── V1.1 [9 execution sets]
+    │   └── Public-APIs
+    │       ├── Collections
+    │       │   ├── GitAuth [Postman collection]
+    │       │   ├── Jsonplaceholder [Postman collection]
+    │       │   └── Petstore-swagger [Postman collection]
+    │       ├── README.md
+    │       └── Screenshots
+    │           ├── GitAuth [6 screenshots]
+    │           ├── Jsonplaceholder [9 screenshots]
+    │           └── Petstore-Swagger [7 screenshots]
+    ├── README.md
+    └── SQL
+        ├── *.sql [3 SQL scripts]
+        ├── README.md
+        └── screenshots [4 report screenshots]
+
 ## Проекты  
 
 ### Развертывание Jira + Xray в Docker  
