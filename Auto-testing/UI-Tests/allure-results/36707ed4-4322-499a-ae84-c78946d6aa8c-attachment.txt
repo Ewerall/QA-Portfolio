@@ -1,0 +1,2 @@
+Ожидаем перехода на страницу оформления заказа (текущий URL: https://www.saucedemo.com/checkout-step-one.html)
+Переход успешен, Текущий URL: https://www.saucedemo.com/checkout-step-one.html
