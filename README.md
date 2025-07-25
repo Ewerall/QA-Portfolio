@@ -122,20 +122,20 @@
   Документированный процесс тестирования от требований до отчета  
   Шаблон для тренировки техник тест-дизайна, написания тест-кейсов и создания автотестов 
 
-**Технологии:** Python(pytest, request, allure - для автотестов, Tkinter - UI), Jira + Xray (для tasl и test менеджмента)
+**Технологии:** Python(pytest, request, allure - для автотестов, Tkinter - UI), Jira + Xray (для task и test менеджмента)
 
 [Репозиторий](https://github.com/Ewerall/CalcQA)
 [Работа с task-менеджером и баг-трекером](https://github.com/Ewerall/QA-Portfolio/tree/main/Calc-Project)
 
 
 ## Актуальные навыки  
-| **Осваиваю и улучшаю**                | **Планирую и изучаю**             |  
-|-----------------------------|--------------------------|  
-| • Автоматизация UI (Selenium WebDriver) <br>• Автоматизация API (requests, pytest) <br>• CI/CD (Github Actions) <br>• Kafka (Для работы с микросервисами)| • Performance testing (k6) <br>• Kubernetes для тестовых сред |  
+| **Осваиваю и улучшаю**   | **Планирую и изучаю**  | **Цели** | 
+|-----------------------------|--------------------------|  --------------------------|  
+| • Автоматизация UI (Selenium WebDriver) <br>• Автоматизация API (requests, pytest) <br>• CI/CD (Github Actions) <br>• Kafka (Для работы с микросервисами)| • Performance testing (k6) <br>• Kubernetes для тестовых сред | • Получить первый коммерческий опыт в QA <br>• Углубить знания в автоматизации тестирования
 
 ## Контакты  
 -  **Email:** starere@mail.com  
--  **Telegram:** [Rubercore](https://t.me/Rubercore)  
+-  **Telegram:** [@Rubercore](https://t.me/Rubercore)  
 -  **GitHub:** [GitHub](https://github.com/Ewerall)
 
 ![Codewars](https://github.r2v.ch/codewars?user=Ewerall&name=true&top_languages=true&stroke=%230000CD&theme=midnight_blue)
