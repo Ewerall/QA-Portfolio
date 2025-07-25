@@ -1,18 +1,29 @@
 # QA Engineer Portfolio
 
 ## Обо мне  
-Начинающий QA-инженер с базой в программировании (Python/JS).  За **месяц самостоятельного изучения QA** создал комплексное портфолио и учебные проекты, демонстрирующее понимание полного цикла тестирования. Совмещаю ручные и автоматизированные подходы QA. Для лучшего понимания навыков, советую просмотреть этот репозиторий.
+Начинающий QA-инженер с базой в программировании (Python/JS).  За **месяц самостоятельного изучения QA** создал портфолио и учебные проекты, для изучения полного цикла тестирования. Совмещаю ручные и автоматизированные подходы QA. Для лучшего понимания моих навыков, советую просмотреть этот репозиторий.
 
 ## Технический стек  
 | **Категория**       | **Детализация**                                                                 |
 |----------------------|---------------------------------------------------------------------------------|
 | **Тестирование**     | • Ручное (Smoke, Regression, E2E, Usability, functional, nonfunctional) <br>• Автотесты (Pytest, request) |
-| **Инструменты**      | • **Jira + XRay:** Полный цикл управления тестированием (test-case, test-run, привязка баг-репортов) <br>• **Postman + Newman**(коллекции, скрипты на JS, CRUD запросы, отчеты) <br>• Chrome DevTools (Elements, Network, Console) <br>• Docker (развертывание Jira/PostgreSQL) <br>• Git/GitHub Actions (CI/CD) <br>• Swagger (Документация API) <br>• Grafana (Отображение метрик и мониторинг) <br>• Prometheus (Хранение метрик) <br>• Testrail (TMS) <br>• Kafka (Микросервисы) <br>• Selenium (UI автотесты)
+| **Инструменты**      | • **Jira + XRay:** Полный цикл управления тестированием (test-case, test-run, привязка баг-репортов) <br>• **Postman + Newman**(коллекции, скрипты на JS, CRUD запросы, отчеты) <br>• Chrome DevTools (Elements, Network, Console) <br>• Docker (развертывание Jira/PostgreSQL) <br>• Git/GitHub Actions (CI/CD) <br>• Swagger (Документация API) <br>• Grafana (Отображение метрик и мониторинг) <br>• Prometheus (Хранение метрик) <br>• Testrail (TMS) <br>• Kafka (Микросервисы) <br>• Selenium (UI web автотест)
 | **Тест-дизайн**      | • Эквивалентное разделение (проверка классов значений) <br>• Анализ граничных значений (тестирование на границах) <br>• Таблицы решений (комбинации действие/результат) <br>• Попарное тестирование (пары параметров) <br>• Предугадывание ошибок (Error Guessing)| 
 | **Программирование** | • Python (pytest, requests, etc.) <br>• JavaScript |
 | **Базы данных**      | • PostgreSQL <br>• MySQL |
 | **Процессы**         | • SDLC/STLC <br>• Agile (Scrum) <br>• REST API <br>• CI/CD основы | 
 
+## Примеры некоторых работ
+- Работа с **Selenium** и использование паттерна проектирования **Page object model (POM)** для автотестирования web-приложения **SauceDemo**. [Подробнее](https://github.com/Ewerall/QA-Portfolio/tree/main/Auto-testing/UI-Tests "UI-Tests")
+  - ![allure_report.png](https://github.com/Ewerall/QA-Portfolio/blob/main/Auto-testing/UI-Tests/allure_report.png "allure_report.png")
+
+- Ручное тестирование собственного desktop-приложения "Калькулятор". Создание тест-кейсов, их выполнение, создание баг-репортов и все это на собственном **Jira-Server**.  [Подробнее](https://github.com/Ewerall/QA-Portfolio/tree/main/Manual-testing/Calculator-Project "Calculator-Project")
+  - ![test_plan_regress.png](https://github.com/Ewerall/QA-Portfolio/blob/main/Manual-testing/Calculator-Project/Other/test_plan_regress.png "test_plan_regress.png")
+
+- Внедрение **Grafana** и **Prometheus** для своего **Jira Server** для отслеживания показателей работы и других метрик. [Подробнее](https://github.com/Ewerall/QA-Portfolio/tree/main/Infrastructure/Jira-Docker/Grafana_Prometheus "Grafana_Prometheus")
+  - ![grafana_metrics.png](https://github.com/Ewerall/QA-Portfolio/blob/main/Infrastructure/Jira-Docker/Grafana_Prometheus/grafana_metrics.png "grafana_metrics.png")
+
+ **Остальные работы в репозитории!** (Их много)
 
 ## Структура репозитория
 
@@ -27,10 +38,12 @@
     │   │   ├── conftest.py
     │   │   ├── README.md
     │   │   └── test_reqres.py
-    │   └── Unit-Tests
-    │       ├── calc_test*.py
-    │       ├── README.md
-    │       └── Screenshots [3 files]
+    │   ├── Unit-Tests
+    │   │   ├── calc_test*.py
+    │   │    ├── README.md
+    │   │    └── Screenshots [3 files]
+    │   └── UI-Tests [Selenium + allure report] 
+    │       └── *.py [4 page objects (POM) + tests + fixtures]
     ├── Documentation
     │   ├── calc_req.pdf
     │   └── Test-Design
@@ -46,7 +59,6 @@
     │       ├── example [5 config files]
     │       ├── Readme.md
     │       └── screenshots [2 files]
-    ├── LICENSE
     ├── Manual-testing
     │   ├── Calculator-Project
     │   │   ├── Bug-reports [8 bug reports]
@@ -70,7 +82,6 @@
     │           ├── GitAuth [6 screenshots]
     │           ├── Jsonplaceholder [9 screenshots]
     │           └── Petstore-Swagger [7 screenshots]
-    ├── README.md
     └── SQL
         ├── *.sql [3 SQL scripts]
         ├── README.md
