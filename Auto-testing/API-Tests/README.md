@@ -16,6 +16,8 @@
 - **Pytest Framework**: Организация и выполнение тестов
 - **Requests Library**: Обработка HTTP-запросов
 
+![crud_test.png](https://github.com/Ewerall/QA-Portfolio/blob/main/Auto-testing/API-Tests/crud_test.png "crud_test.png")
+
 ### Отчётность
 - **Allure отчёты**:  
   Детализированные HTML-отчёты, автоматически генерируемые через GitHub Actions  
