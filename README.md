@@ -3,6 +3,7 @@
 [![Jira](https://img.shields.io/badge/Jira-0052CC?logo=jira&logoColor=white)](https://www.atlassian.com/software/jira)
 [![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)](https://git-scm.com/)
 [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![pytest](https://img.shields.io/badge/pytest-0A9EDC?logo=pytest&logoColor=white)](https://docs.pytest.org/)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Postman](https://img.shields.io/badge/Postman-FF6C37?logo=postman&logoColor=white)](https://www.postman.com/)
 [![Newman](https://img.shields.io/badge/Newman-FF6C37?logo=postman&logoColor=white)](https://learning.postman.com/docs/running-collections/using-newman-cli/command-line-integration-with-newman/)
@@ -17,13 +18,15 @@
 [![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white)](https://www.mysql.com/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)](https://github.com/)
 [![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?logo=githubactions&logoColor=white)](https://github.com/features/actions)
+[![Charles Proxy](https://img.shields.io/badge/Charles_Proxy-8FBCBB?logo=charles&logoColor=black)](https://www.charlesproxy.com/)
+[![More](https://img.shields.io/badge/AndMore-29ABE2?logo=internetcomputer&logoColor=white)](https://github.com/Ewerall?tab=repositories)
 ## Обо мне   
 Самостоятельно изучая материалы, документацию, статьи - создал портфолио и учебные проекты, для изучения полного цикла тестирования. Совмещаю ручные и автоматизированные подходы QA. Для лучшего понимания моих навыков, советую просмотреть этот репозиторий.
 
 ## Технический стек  
 | **Категория**       | **Детализация**                                                                 |
 |----------------------|---------------------------------------------------------------------------------|
-| **Тестирование**     | • Ручное (Smoke, Regression, E2E, Usability, functional, nonfunctional) <br>• Автотесты (Pytest, request) |
+| **Тестирование**     | • Ручное (Smoke, Regression, E2E, Usability, functional, nonfunctional) <br>• Автотесты (pytest, request, allure, faker, selenium, паттерны проектирования) |
 | **Инструменты**      | • **Jira + XRay:** Полный цикл управления тестированием (test-case, test-run, привязка баг-репортов) <br>• **Postman + Newman**(коллекции, скрипты на JS, CRUD запросы, отчеты) <br>• Chrome DevTools (Elements, Network, Console) <br>• Docker (развертывание Jira/PostgreSQL) <br>• Git/GitHub Actions (CI/CD) <br>• Swagger (Документация API) <br>• Grafana (Отображение метрик и мониторинг) <br>• Prometheus (Хранение метрик) <br>• Testrail (TMS) <br>• Apache Kafka (Микросервисы) <br>• Selenium (UI web автотест)
 | **Тест-дизайн**      | • Эквивалентное разделение (проверка классов значений) <br>• Анализ граничных значений (тестирование на границах) <br>• Таблицы решений (комбинации действие/результат) <br>• Попарное тестирование (пары параметров) <br>• Предугадывание ошибок (Error Guessing)| 
 | **Программирование** | • Python (pytest, requests, etc.) <br>• JavaScript |
@@ -176,7 +179,7 @@
 ## Актуальные навыки  
 | **Осваиваю и улучшаю**   | **Планирую и изучаю**  | **Цели** | 
 |-----------------------------|--------------------------|  --------------------------|  
-| • Автоматизация UI (Selenium WebDriver) <br>• Автоматизация API (requests, pytest) <br>• CI/CD (Github Actions) <br>• Apache Kafka (Для работы с микросервисами) <br>• SQL и работа с БД (PostgreSQL, MySQL)| • Performance testing (k6) <br>• Kubernetes для тестовых сред | • Получить первый коммерческий опыт в QA <br>• Углубить знания в автоматизации тестирования
+| • Автоматизация UI (Selenium WebDriver) <br>• Автоматизация API (requests, pytest) <br>• CI/CD (Github Actions) <br>• Apache Kafka (Для работы с микросервисами) <br>• SQL и работа с БД (PostgreSQL, MySQL) <br>• Углубление в паттерны проектирования (Factory, builder, decorator, POM, prototype etc.) <br>• Charles Proxy (Анализ запросов) | • Performance testing (k6) <br>• Kubernetes для тестовых сред | • Получить первый коммерческий опыт в QA <br>• Углубление навыков и знаний
 
 ## Контакты  
 -  **Email:** starere@mail.com  
