@@ -24,7 +24,7 @@
 | **Категория**       | **Детализация**                                                                 |
 |----------------------|---------------------------------------------------------------------------------|
 | **Тестирование**     | • Ручное (Smoke, Regression, E2E, Usability, functional, nonfunctional) <br>• Автотесты (Pytest, request) |
-| **Инструменты**      | • **Jira + XRay:** Полный цикл управления тестированием (test-case, test-run, привязка баг-репортов) <br>• **Postman + Newman**(коллекции, скрипты на JS, CRUD запросы, отчеты) <br>• Chrome DevTools (Elements, Network, Console) <br>• Docker (развертывание Jira/PostgreSQL) <br>• Git/GitHub Actions (CI/CD) <br>• Swagger (Документация API) <br>• Grafana (Отображение метрик и мониторинг) <br>• Prometheus (Хранение метрик) <br>• Testrail (TMS) <br>• Kafka (Микросервисы) <br>• Selenium (UI web автотест)
+| **Инструменты**      | • **Jira + XRay:** Полный цикл управления тестированием (test-case, test-run, привязка баг-репортов) <br>• **Postman + Newman**(коллекции, скрипты на JS, CRUD запросы, отчеты) <br>• Chrome DevTools (Elements, Network, Console) <br>• Docker (развертывание Jira/PostgreSQL) <br>• Git/GitHub Actions (CI/CD) <br>• Swagger (Документация API) <br>• Grafana (Отображение метрик и мониторинг) <br>• Prometheus (Хранение метрик) <br>• Testrail (TMS) <br>• Apache Kafka (Микросервисы) <br>• Selenium (UI web автотест)
 | **Тест-дизайн**      | • Эквивалентное разделение (проверка классов значений) <br>• Анализ граничных значений (тестирование на границах) <br>• Таблицы решений (комбинации действие/результат) <br>• Попарное тестирование (пары параметров) <br>• Предугадывание ошибок (Error Guessing)| 
 | **Программирование** | • Python (pytest, requests, etc.) <br>• JavaScript |
 | **Базы данных**      | • PostgreSQL <br>• MySQL |
@@ -105,12 +105,12 @@
         │    ├── README.md
         │    └── screenshots [4 report screenshots]
         └── SQL-practice
-            ├── easy [16 screenshots[
+            ├── easy [16 screenshots]
             ├── medium [17+ screenshots]
             ├── hard [3+ screenshots]
             └── README.md
 
-## Проекты  
+## Pet-Проекты  
 
 ### Развертывание Jira + Xray в Docker  
 **Задачи:**  
@@ -161,11 +161,22 @@
 [Репозиторий](https://github.com/Ewerall/CalcQA)
 [Работа с task-менеджером и баг-трекером](https://github.com/Ewerall/QA-Portfolio/tree/main/Calc-Project)
 
+## Другие работы
+
+- Автотестирование API Reqres.in [Auto-testing/API-Tests](https://github.com/Ewerall/QA-Portfolio/tree/main/Auto-testing/API-Tests "API-Tests")
+- Автотестирование Event-Driven архитектуры Apache Kafka [Auto-testing/Kafka-Tests](https://github.com/Ewerall/QA-Portfolio/tree/main/Auto-testing/Kafka-Tests "Kafka-Tests")
+- Автотестирование логики pet-проекта "Калькулятор" [Auto-testing/Unit-tests](https://github.com/Ewerall/QA-Portfolio/tree/main/Auto-testing/Unit-Tests "Unit-Tests")
+- Создание 16 тест-кейсов для онлайн аудио-конвертера с применением техник тест-дизайна [Documentation/Test-Design](https://github.com/Ewerall/QA-Portfolio/tree/main/Documentation/Test-Design "Test-Design")
+- Настройка CI/CD Github actions для pet-проекта "Калькулятор" [Infrastructure/CI-CD](https://github.com/Ewerall/QA-Portfolio/tree/main/Infrastructure/CI-CD "CI-CD")
+- Развертывание Apache Kafka через Docker [Infrastructure/Kafka-Docker](https://github.com/Ewerall/QA-Portfolio/tree/main/Infrastructure/Kafka-Docker "Kafka-Docker")
+- Тестирование публичных API с помощью Postman и создание Newman отчетов [Public-APIs](https://github.com/Ewerall/QA-Portfolio/tree/main/Manual-testing/Public-APIs "Public-APIs")
+- Практика работы с БД PostgreSQL для сбора статистика Jira [SQL/PostgreSQL_Jira](https://github.com/Ewerall/QA-Portfolio/tree/main/SQL/PostgreSQL_Jira "PostgreSQL_Jira")
+- Практика работы с БД и SQL на sql-practice.com [SQL/SQL-practice](https://github.com/Ewerall/QA-Portfolio/tree/main/SQL/SQL-practice "SQL-practice")
 
 ## Актуальные навыки  
 | **Осваиваю и улучшаю**   | **Планирую и изучаю**  | **Цели** | 
 |-----------------------------|--------------------------|  --------------------------|  
-| • Автоматизация UI (Selenium WebDriver) <br>• Автоматизация API (requests, pytest) <br>• CI/CD (Github Actions) <br>• Kafka (Для работы с микросервисами)| • Performance testing (k6) <br>• Kubernetes для тестовых сред | • Получить первый коммерческий опыт в QA <br>• Углубить знания в автоматизации тестирования
+| • Автоматизация UI (Selenium WebDriver) <br>• Автоматизация API (requests, pytest) <br>• CI/CD (Github Actions) <br>• Apache Kafka (Для работы с микросервисами) <br>• SQL и работа с БД (PostgreSQL, MySQL)| • Performance testing (k6) <br>• Kubernetes для тестовых сред | • Получить первый коммерческий опыт в QA <br>• Углубить знания в автоматизации тестирования
 
 ## Контакты  
 -  **Email:** starere@mail.com  
