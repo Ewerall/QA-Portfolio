@@ -4,7 +4,7 @@ import allure
 class LoginPage:
     def __init__(self, driver):
         self.driver = driver
-        self.url = "https://www.saucedemo.com/"
+        self.url = "https://www.saucedemo.com/" 
     
     @allure.step("Открыть страницу авторизации")
     def open(self):

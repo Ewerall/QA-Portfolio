@@ -2,8 +2,6 @@ import pytest
 import requests
 import time
 
-BASE_URL = "https://reqres.in/api"
-
 def test_get_user(base_url, api_headers, auth_token):
     user_id = 2
     headers = {**api_headers, "Authorization": f"Bearer {auth_token}"}
@@ -94,4 +92,3 @@ def test_failed_login(base_url, api_headers, email, password, expected_error):
     assert response.status_code == 400
     assert expected_error.lower() in response.json()["error"].lower()
 
-#this comment for test actions

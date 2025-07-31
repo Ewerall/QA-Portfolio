@@ -8,12 +8,13 @@ import allure
 class InventoryPage:
     def __init__(self, driver):
         self.driver = driver
+        #here we save locators like atributes class (cool)
         self.inventory_container = "inventory_container"
         self.shopping_cart_badge = "shopping_cart_badge"
         self.cart_link = "shopping_cart_link"
         self.product_sort_container = "product_sort_container"
         
-    @allure.step("Проверить открыта ли страница инвентаря")
+    @allure.step("Проверить открыта ли страница товаров")
     def is_page_opened(self):
         return "inventory.html" in self.driver.current_url
     
@@ -22,7 +23,7 @@ class InventoryPage:
         # "Sauce Labs Backpack" -> "sauce-labs-backpack"
         product_id = product_name.lower().replace(" ", "-")
         add_button_id = f"add-to-cart-{product_id}"
-        self.driver.find_element(By.ID, add_button_id).click()
+        self.driver.find_element(By.ID, add_button_id).click() 
     
     @allure.step("Получить количество товаров в корзине")
     def get_cart_badge_count(self):
@@ -31,7 +32,7 @@ class InventoryPage:
         except:
             return 0
         
-    @allure.step("Перейти в корзину")
+    @allure.step("Открыть корзину")
     def go_to_cart(self):
         self.driver.find_element(By.CLASS_NAME, self.cart_link).click()
     

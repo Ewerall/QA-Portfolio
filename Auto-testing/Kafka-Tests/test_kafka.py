@@ -21,15 +21,12 @@ class TestKafkaIntegration:
     @allure.story("Отправка события о создании заказа")
     @allure.title("Проверка доставки события создания заказа")
     def test_order_creation_event(self, producer, order_consumer):
-        # send event in topic
         with allure.step("Отправка события в топик orders"):
             send_event(producer, "orders", ORDER_EVENT)
         
-        # get event from topic
         with allure.step("Получение события из топика orders"):
             received_event = consume_event(order_consumer, timeout=15)
         
-        # check event
         with allure.step("Проверка содержимого события"):
             assert received_event == ORDER_EVENT, "Событие не соответствует ожидаемому"
 
@@ -41,16 +38,15 @@ class TestKafkaIntegration:
         group_id = f"load_test_group_{time.time()}"
         consumer = create_consumer("load_test", group_id)
         
-        # Send 100 tests event
         with allure.step("Отправка 100 тестовых событий"):
             for i in range(100):
                 send_event(producer, "load_test", {"message_num": i})
         
-        # check delivery
         with allure.step("Подтверждение доставки всех сообщений"):
             received_count = 0
             start_time = time.time()
             
+            #check with timeout
             while received_count < 100 and time.time() - start_time < 30:
                 messages = consumer.poll(timeout_ms=1000, max_records=100)
                 for records in messages.values():

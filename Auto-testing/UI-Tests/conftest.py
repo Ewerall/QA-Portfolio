@@ -16,6 +16,7 @@ def driver():
     chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
     chrome_options.add_experimental_option('useAutomationExtension', False)
     
+    #hide our automatisation, cookie and pop-up
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("--disable-dev-shm-usage")
     chrome_options.add_argument("--incognito")
@@ -25,6 +26,7 @@ def driver():
         options=chrome_options
     )
     
+    #hide our automatisation
     driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
     
     yield driver

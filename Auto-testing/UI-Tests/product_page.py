@@ -11,8 +11,8 @@ class ProductPage:
         
     @allure.step("Получить имя продукта")    
     def get_product_name(self):
-        return self.driver.find_element(By.CLASS_NAME, "inventory_details_name").text
+        return self.driver.find_element(By.CLASS_NAME, "inventory_details_name").text #can make it in constructor attribute
         
     @allure.step("Получить цену продукта")    
     def get_product_price(self):
-        return self.driver.find_element(By.CLASS_NAME, "inventory_details_price").text
+        return self.driver.find_element(By.CLASS_NAME, "inventory_details_price").text #can make it in constructor attribute
