@@ -179,7 +179,7 @@
 ## Актуальные навыки  
 | **Осваиваю и улучшаю**   | **Планирую и изучаю**  | **Цели** | 
 |-----------------------------|--------------------------|  --------------------------|  
-| • Автоматизация UI (Selenium WebDriver) <br>• Автоматизация API (requests, pytest) <br>• CI/CD (Github Actions) <br>• Apache Kafka (Для работы с микросервисами) <br>• SQL и работа с БД (PostgreSQL, MySQL) <br>• Углубление в паттерны проектирования (Factory, builder, decorator, POM, prototype etc.) <br>• Charles Proxy (Анализ запросов) | • Performance testing (k6) <br>• Kubernetes для тестовых сред | • Получить первый коммерческий опыт в QA <br>• Углубление навыков и знаний
+| • Автоматизация UI (~~Selenium WebDriver~~, Playwright) <br>• Автоматизация API (requests, mureq, faker) <br>• CI/CD (Github Actions, jenkins) <br>• Apache Kafka (Для работы с микросервисами) <br>• SQL и работа с БД (PostgreSQL, MySQL) <br>• Углубление в паттерны проектирования (Factory, builder, decorator, POM, prototype etc.) <br>• Углубление в техники тест-дизайна (Диаграмма состояний, Причинно-следственный анализ)| • Performance testing (k6) <br>• Kubernetes (Оркестрация контейнеров) <br>• Charles Proxy (Анализ запросов) | • Получить первый коммерческий опыт в QA <br>• Углубление навыков и знаний
 
 ## Контакты  
 -  **Email:** starere@mail.com  
