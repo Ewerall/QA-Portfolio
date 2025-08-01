@@ -14,7 +14,7 @@ ORDER_EVENT = {
     "total": 99.99
 }
 
-@allure.epic("Интеграционное тестирование Кафка")
+@allure.epic("Тестирование Кафка")
 @allure.feature("Event-Driven архитектура")
 class TestKafkaIntegration:
     
@@ -32,9 +32,8 @@ class TestKafkaIntegration:
 
     
     @allure.story("Тестирование обработки больших объемов данных")
-    @allure.title("Проверка пропускной способности системы")
+    @allure.title("Проверка пропускной способности")
     def test_throughput(self, producer):
-        # Make group
         group_id = f"load_test_group_{time.time()}"
         consumer = create_consumer("load_test", group_id)
         
@@ -53,5 +52,5 @@ class TestKafkaIntegration:
                     received_count += len(records)
             
             assert received_count == 100, f"Получено {received_count}/100 сообщений"
-        
+
         consumer.close()

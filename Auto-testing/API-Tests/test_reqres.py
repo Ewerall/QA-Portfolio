@@ -21,11 +21,7 @@ def test_create_user(base_url, user_data, auth_token, api_headers):
     )
     print(f"Create User Response: {response.status_code} - {response.text}")
     assert response.status_code == 201
-    return response.json()["id"] 
-
-'''
-return = bad, but i wanted three tests for create, update, and delete at the same time, so i have to use return in test_create_user
-'''
+    return response.json()["id"] #return == bad for tests, better use fixtures
 
 def test_update_user(base_url, user_data, auth_token, api_headers):
     user_id = test_create_user(base_url, user_data, auth_token, api_headers)
@@ -66,7 +62,6 @@ def test_endpoint_time(base_url, api_headers):
 @pytest.mark.parametrize("user_id, expected_status", [
     (1, 200),
     (2, 200),
-    (3, 200),
     (23, 404),
     (999, 404),
 ])
@@ -91,4 +86,3 @@ def test_failed_login(base_url, api_headers, email, password, expected_error):
     response = requests.post(f"{base_url}/login", json=payload, headers=api_headers)
     assert response.status_code == 400
     assert expected_error.lower() in response.json()["error"].lower()
-

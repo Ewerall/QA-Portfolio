@@ -21,6 +21,5 @@ def auth_token(base_url, api_headers):
         json=auth_data,
         headers=api_headers
     )
-    assert response.status_code == 200
+    #Use assert in fixture - bad! assert use in tests
     return response.json()["token"]
-

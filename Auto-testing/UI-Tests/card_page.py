@@ -6,6 +6,8 @@ import allure
 class CartPage:
     def __init__(self, driver):
         self.driver = driver 
+        self.cart_item = "cart_item" #class name in attribute
+        self.checkout = "checkout"
     
     @allure.step("Открыта ли корзина")
     def is_page_opened(self):
@@ -13,11 +15,11 @@ class CartPage:
     
     @allure.step("Получить число товаров в корзине")
     def get_product_count(self):
-        return len(self.driver.find_elements(By.CLASS_NAME, "cart_item")) #find by class name, but can make it in attribute
+        return len(self.driver.find_elements(By.CLASS_NAME, self.cart_item)) #instead of "cart_item"
     
     @allure.step("Нажать checkout")
     def click_checkout(self):
-        self.driver.find_element(By.ID, "checkout").click() #here find by id (better)
+        self.driver.find_element(By.ID, self.checkout).click() #here find by id (better)
     
     @allure.step("Проверка что перешли на страницу checkout")
     def is_checkout_step_one_opened(self, timeout=5):
