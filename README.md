@@ -16,24 +16,29 @@
 [![Chrome DevTools](https://img.shields.io/badge/Chrome_DevTools-4285F4?logo=googlechrome&logoColor=white)](https://developer.chrome.com/docs/devtools/)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 [![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white)](https://www.mysql.com/)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)](https://github.com/)
 [![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?logo=githubactions&logoColor=white)](https://github.com/features/actions)
 [![Charles Proxy](https://img.shields.io/badge/Charles_Proxy-8FBCBB?logo=charles&logoColor=black)](https://www.charlesproxy.com/)
-[![More](https://img.shields.io/badge/AndMore-29ABE2?logo=internetcomputer&logoColor=white)](https://github.com/Ewerall?tab=repositories)
+[![Playwright](https://img.shields.io/badge/Playwright-2EAD33?logo=playwright&logoColor=white)](https://playwright.dev/)
+
+
 ## Обо мне   
-Самостоятельно изучая материалы, документацию, статьи - создал портфолио и учебные проекты, для изучения полного цикла тестирования. Совмещаю ручные и автоматизированные подходы QA. Для лучшего понимания моих навыков, советую просмотреть этот репозиторий.
+Я начинающий QA-инженер, 22 года. Самостоятельно изучаю материалы, документацию и статьи, создаю pet-проекты для практики и формирования этого портфолио. Моя цель — развитие и повышение профессиональных навыков в сфере QA. <br>
+Все размещённые в портфолио проекты — учебные, они помогают мне закреплять знания и развивать навыки тестирования. Пока что у меня нет коммерческого опыта в QA, но я активно расту и стремлюсь к новым достижениям в этой области.
 
 ## Технический стек  
 | **Категория**       | **Детализация**                                                                 |
 |----------------------|---------------------------------------------------------------------------------|
-| **Тестирование**     | • Ручное (Smoke, Regression, E2E, Usability, functional, nonfunctional) <br>• Автотесты (pytest, request, allure, faker, selenium, паттерны проектирования) |
-| **Инструменты**      | • **Jira + XRay:** Полный цикл управления тестированием (test-case, test-run, привязка баг-репортов) <br>• **Postman + Newman**(коллекции, скрипты на JS, CRUD запросы, отчеты) <br>• Chrome DevTools (Elements, Network, Console) <br>• Docker (развертывание Jira/PostgreSQL) <br>• Git/GitHub Actions (CI/CD) <br>• Swagger (Документация API) <br>• Grafana (Отображение метрик и мониторинг) <br>• Prometheus (Хранение метрик) <br>• Testrail (TMS) <br>• Apache Kafka (Микросервисы) <br>• Selenium (UI web автотест)
+| **Тестирование**     | • Ручное (Smoke, Regression, E2E, Usability, functional, nonfunctional) <br>• Автотесты (pytest, request, allure, faker, selenium, playwright, паттерны проектирования) |
+| **Инструменты**      | • **Jira + Xray test managment:** Управление задачами и тестированием (test-case, test-run, привязка баг-репортов) <br>• **Postman + Newman** (коллекции, JS-скрипты, CRUD запросы, отчеты) <br>• Chrome DevTools (Elements, Network, Console) <br>• Docker (развертывание Jira/PostgreSQL) <br>• Git/GitHub Actions (CI/CD) <br>• Swagger (Документация API) <br>• Grafana (Отображение метрик и мониторинг) <br>• Prometheus (Хранение метрик) <br>• Testrail (TMS) <br>• Apache Kafka (Микросервисы) <br>• Selenium (UI web автотестестирование) <br>• Playwright (UI web автотестирование)
 | **Тест-дизайн**      | • Эквивалентное разделение (проверка классов значений) <br>• Анализ граничных значений (тестирование на границах) <br>• Таблицы решений (комбинации действие/результат) <br>• Попарное тестирование (пары параметров) <br>• Предугадывание ошибок (Error Guessing)| 
-| **Программирование** | • Python (pytest, requests, etc.) <br>• JavaScript |
+| **Программирование** | • Python <br>• JavaScript |
 | **Базы данных**      | • PostgreSQL <br>• MySQL |
 | **Процессы**         | • SDLC/STLC <br>• Agile (Scrum) <br>• REST API <br>• CI/CD основы | 
 
 ## Примеры некоторых работ
+- Репозиторий с **Playwright**-**POM** автотестирование web-приложения **Demoblaze** + **Github actions** + **Allure** + **Github pages** [Подробнее](https://github.com/Ewerall/PlaywrightDemoblaze)
+  - <video src='https://github.com/user-attachments/assets/1c503fa2-f8ec-4cfc-a1f5-7eefd5123ff6' width=180/>
+
 - Работа с **Selenium** и использование паттерна проектирования **Page object model (POM)** для автотестирования web-приложения **SauceDemo**. [Подробнее](https://github.com/Ewerall/QA-Portfolio/tree/main/Auto-testing/UI-Tests "UI-Tests")
   - ![allure_report.png](https://github.com/Ewerall/QA-Portfolio/blob/main/Auto-testing/UI-Tests/allure_report.png "allure_report.png")
 
@@ -43,7 +48,7 @@
 - Внедрение **Grafana** и **Prometheus** для своего **Jira Server** для отслеживания показателей работы и других метрик. [Подробнее](https://github.com/Ewerall/QA-Portfolio/tree/main/Infrastructure/Jira-Docker/Grafana_Prometheus "Grafana_Prometheus")
   - ![grafana_metrics.png](https://github.com/Ewerall/QA-Portfolio/blob/main/Infrastructure/Jira-Docker/Grafana_Prometheus/grafana_metrics.png "grafana_metrics.png")
 
- **Остальные работы в репозитории!** (Их много)
+ **Остальные работы в репозитории!**
 
 ## Структура репозитория
 
@@ -115,13 +120,13 @@
 
 ## Pet-Проекты  
 
-### Развертывание Jira + Xray в Docker  
+### Развертывание **Jira server** через **Docker compose** + **Grafana** 
 **Задачи:**  
 - Создание инфраструктуры для управления тестированием с нуля  
 - Настройка связки Jira Server 8.12 + PostgreSQL в Docker  
-- Интегрирование Xray для управления тест-кейсами и Test Execution + Checklist for Jira
+- Интегрирование Xray для управления тестированием + Checklist for Jira для чек-листов
 
-**Результат:**  
+ **Результат:**  
   Готовое тестовое окружение  
   Единое пространство для проектов с историей тестирования 
 
@@ -151,10 +156,6 @@
 - Создание тест-кейсов (Xray), обнаружение дефектов и создание bug-репортов  
 - Реализация автоматизации проверки расчетов (pytest)
 
-**Техники тест-дизайна:**  
-- Таблица решений для проверки комбинаций операций [+, -, ?, ?]  
-- Исследовательское тестирование UI 
-
 **Результат:**  
   Документированный процесс тестирования от требований до отчета  
   Шаблон для тренировки техник тест-дизайна, написания тест-кейсов и создания автотестов 
@@ -162,7 +163,7 @@
 **Технологии:** Python(pytest, request, allure - для автотестов, Tkinter - UI), Jira + Xray (для task и test менеджмента)
 
 [Репозиторий](https://github.com/Ewerall/CalcQA)
-[Работа с task-менеджером и баг-трекером](https://github.com/Ewerall/QA-Portfolio/tree/main/Calc-Project)
+[Работа с Jira + test-managment](https://github.com/Ewerall/QA-Portfolio/tree/main/Calc-Project)
 
 ## Другие работы
 
@@ -176,10 +177,10 @@
 - Практика работы с БД PostgreSQL для сбора статистика Jira [SQL/PostgreSQL_Jira](https://github.com/Ewerall/QA-Portfolio/tree/main/SQL/PostgreSQL_Jira "PostgreSQL_Jira")
 - Практика работы с БД и SQL на sql-practice.com [SQL/SQL-practice](https://github.com/Ewerall/QA-Portfolio/tree/main/SQL/SQL-practice "SQL-practice")
 
-## Актуальные навыки  
+## Стек и навыки  
 | **Осваиваю и улучшаю**   | **Планирую и изучаю**  | **Цели** | 
 |-----------------------------|--------------------------|  --------------------------|  
-| • Автоматизация UI (~~Selenium WebDriver~~, Playwright) <br>• Автоматизация API (requests, mureq, faker) <br>• CI/CD (Github Actions, jenkins) <br>• Apache Kafka (Для работы с микросервисами) <br>• SQL и работа с БД (PostgreSQL, MySQL) <br>• Углубление в паттерны проектирования (Factory, builder, decorator, POM, prototype etc.) <br>• Углубление в техники тест-дизайна (Диаграмма состояний, Причинно-следственный анализ)| • Performance testing (k6) <br>• Kubernetes (Оркестрация контейнеров) <br>• Charles Proxy (Анализ запросов) | • Получить первый коммерческий опыт в QA <br>• Углубление навыков и знаний
+| • Автоматизация UI (Selenium WebDriver, Playwright) <br>• Автоматизация API (requests, mureq) <br>• CI/CD (Github Actions, jenkins, Gitlab) <br>• Apache Kafka <br>• SQL и работа с БД (PostgreSQL, MySQL) <br>• Углубление в паттерны проектирования (Factory, builder, POM, prototype etc.) <br>• Углубление в техники тест-дизайна (Диаграмма состояний, Причинно-следственный анализ)| • Performance testing (k6) <br>• Kubernetes (Оркестрация контейнеров) <br>• Charles Proxy (Анализ запросов) | • Получить первый коммерческий опыт в QA <br>• Углубление навыков и знаний
 
 ## Контакты  
 -  **Email:** starere@mail.com  
