@@ -1,5 +1,7 @@
 # QA Engineer Portfolio
 
+[![EN](https://img.shields.io/badge/EN-english-CC0000?logo=unitedkingdom&logoColor=white)](https://github.com/Ewerall/QA-Portfolio/blob/main/Readme.en.md)
+
 [![Jira](https://img.shields.io/badge/Jira-0052CC?logo=jira&logoColor=white)](https://www.atlassian.com/software/jira)
 [![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)](https://git-scm.com/)
 [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)](https://www.python.org/)
