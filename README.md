@@ -1,6 +1,6 @@
 # QA Engineer Portfolio
 
-[![EN](https://img.shields.io/badge/EN-english-CC0000?logo=unitedkingdom&logoColor=white)](https://github.com/Ewerall/QA-Portfolio/blob/main/Readme.en.md)
+[![RU](https://img.shields.io/badge/RU-русский-0066CC?logo=russia&logoColor=white)](https://github.com/Ewerall/QA-Portfolio/blob/main/README.md)
 
 [![Jira](https://img.shields.io/badge/Jira-0052CC?logo=jira&logoColor=white)](https://www.atlassian.com/software/jira)
 [![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)](https://git-scm.com/)
@@ -22,37 +22,38 @@
 [![Charles Proxy](https://img.shields.io/badge/Charles_Proxy-8FBCBB?logo=charles&logoColor=black)](https://www.charlesproxy.com/)
 [![Playwright](https://img.shields.io/badge/Playwright-2EAD33?logo=playwright&logoColor=white)](https://playwright.dev/)
 
+## About Me  
+I am a 22-year-old aspiring QA Engineer. I independently study materials, documentation, and articles while creating pet projects for practice and building this portfolio. My goal is to develop and enhance professional skills in the QA field.  
+All projects in this portfolio are educational – they help me solidify knowledge and develop testing skills. While I don't have commercial QA experience yet, I'm actively growing and striving for new achievements in this domain.
 
-## Обо мне   
-Я начинающий QA-инженер, 22 года. Самостоятельно изучаю материалы, документацию и статьи, создаю pet-проекты для практики и формирования этого портфолио. Моя цель — развитие и повышение профессиональных навыков в сфере QA. <br>
-Все размещённые в портфолио проекты — учебные, они помогают мне закреплять знания и развивать навыки тестирования. Пока что у меня нет коммерческого опыта в QA, но я активно расту и стремлюсь к новым достижениям в этой области.
+## Technical Stack  
+| **Category**         | **Details**                                                                 |
+|----------------------|-----------------------------------------------------------------------------|
+| **Testing**          | • Manual (Smoke, Regression, E2E, Usability, Functional, Non-functional) <br>• Automation (pytest, requests, Allure, Faker, Selenium, Playwright, design patterns) |
+| **Tools**            | • **Jira + Xray Test Management:** Task and test management (test cases, test runs, bug report linking) <br>• **Postman + Newman** (collections, JS scripts, CRUD requests, reports) <br>• Chrome DevTools (Elements, Network, Console) <br>• Docker (Jira/PostgreSQL deployment) <br>• Git/GitHub Actions (CI/CD) <br>• Swagger (API documentation) <br>• Grafana (Metrics visualization and monitoring) <br>• Prometheus (Metrics storage) <br>• TestRail (TMS) <br>• Apache Kafka (Microservices) <br>• Selenium (UI web automation) <br>• Playwright (UI web automation) |
+| **Test Design**      | • Equivalence Partitioning (value class verification) <br>• Boundary Value Analysis (edge case testing) <br>• Decision Tables (action/result combinations) <br>• Pairwise Testing (parameter pairs) <br>• Error Guessing | 
+| **Programming**      | • Python <br>• JavaScript* <br>• Java* |
+| **Databases**        | • PostgreSQL <br>• MySQL |
+| **Processes**        | • SDLC/STLC <br>• Agile (Scrum) <br>• REST API <br>• CI/CD Fundamentals | 
 
-## Технический стек  
-| **Категория**       | **Детализация**                                                                 |
-|----------------------|---------------------------------------------------------------------------------|
-| **Тестирование**     | • Ручное (Smoke, Regression, E2E, Usability, functional, nonfunctional) <br>• Автотесты (pytest, request, allure, faker, selenium, playwright, паттерны проектирования) |
-| **Инструменты**      | • **Jira + Xray test managment:** Управление задачами и тестированием (test-case, test-run, привязка баг-репортов) <br>• **Postman + Newman** (коллекции, JS-скрипты, CRUD запросы, отчеты) <br>• Chrome DevTools (Elements, Network, Console) <br>• Docker (развертывание Jira/PostgreSQL) <br>• Git/GitHub Actions (CI/CD) <br>• Swagger (Документация API) <br>• Grafana (Отображение метрик и мониторинг) <br>• Prometheus (Хранение метрик) <br>• Testrail (TMS) <br>• Apache Kafka (Микросервисы) <br>• Selenium (UI web автотестестирование) <br>• Playwright (UI web автотестирование)
-| **Тест-дизайн**      | • Эквивалентное разделение (проверка классов значений) <br>• Анализ граничных значений (тестирование на границах) <br>• Таблицы решений (комбинации действие/результат) <br>• Попарное тестирование (пары параметров) <br>• Предугадывание ошибок (Error Guessing)| 
-| **Программирование** | • Python <br>• JavaScript |
-| **Базы данных**      | • PostgreSQL <br>• MySQL |
-| **Процессы**         | • SDLC/STLC <br>• Agile (Scrum) <br>• REST API <br>• CI/CD основы | 
+> **Java, Javascript - basic understanding and problem-solving experience*
 
-## Примеры некоторых работ
-- Репозиторий с **Playwright**-**POM** автотестирование web-приложения **Demoblaze** + **Github actions** + **Allure** + **Github pages** [Подробнее](https://github.com/Ewerall/PlaywrightDemoblaze)
+## Selected Projects
+- **Playwright-POM** automation for **Demoblaze** web app + **GitHub Actions** + **Allure** + **GitHub Pages** [Details](https://github.com/Ewerall/PlaywrightDemoblaze)
   - <video src='https://github.com/user-attachments/assets/1c503fa2-f8ec-4cfc-a1f5-7eefd5123ff6' width=180/>
 
-- Работа с **Selenium** и использование паттерна проектирования **Page object model (POM)** для автотестирования web-приложения **SauceDemo**. [Подробнее](https://github.com/Ewerall/QA-Portfolio/tree/main/Auto-testing/UI-Tests "UI-Tests")
-  - ![allure_report.png](https://github.com/Ewerall/QA-Portfolio/blob/main/Auto-testing/UI-Tests/allure_report.png "allure_report.png")
+- **Selenium** automation using **Page Object Model (POM)** for **SauceDemo** web app [Details](https://github.com/Ewerall/QA-Portfolio/tree/main/Auto-testing/UI-Tests "UI-Tests")
+  - ![allure_report.png](https://github.com/Ewerall/QA-Portfolio/blob/main/Auto-testing/UI-Tests/allure_report.png "Allure Report")
 
-- Ручное тестирование собственного desktop-приложения "Калькулятор". Создание тест-кейсов, их выполнение, создание баг-репортов и все это на собственном **Jira-Server**.  [Подробнее](https://github.com/Ewerall/QA-Portfolio/tree/main/Manual-testing/Calculator-Project "Calculator-Project")
-  - ![test_plan_regress.png](https://github.com/Ewerall/QA-Portfolio/blob/main/Manual-testing/Calculator-Project/Other/test_plan_regress.png "test_plan_regress.png")
+- Manual testing of a custom "Calculator" desktop app. Created test cases, executed tests, filed bug reports using self-hosted **Jira Server** [Details](https://github.com/Ewerall/QA-Portfolio/tree/main/Manual-testing/Calculator-Project "Calculator-Project")
+  - ![test_plan_regress.png](https://github.com/Ewerall/QA-Portfolio/blob/main/Manual-testing/Calculator-Project/Other/test_plan_regress.png "Regression Test Plan")
 
-- Внедрение **Grafana** и **Prometheus** для своего **Jira Server** для отслеживания показателей работы и других метрик. [Подробнее](https://github.com/Ewerall/QA-Portfolio/tree/main/Infrastructure/Jira-Docker/Grafana_Prometheus "Grafana_Prometheus")
-  - ![grafana_metrics.png](https://github.com/Ewerall/QA-Portfolio/blob/main/Infrastructure/Jira-Docker/Grafana_Prometheus/grafana_metrics.png "grafana_metrics.png")
+- Implemented **Grafana** and **Prometheus** for **Jira Server** monitoring [Details](https://github.com/Ewerall/QA-Portfolio/tree/main/Infrastructure/Jira-Docker/Grafana_Prometheus "Grafana_Prometheus")
+  - ![grafana_metrics.png](https://github.com/Ewerall/QA-Portfolio/blob/main/Infrastructure/Jira-Docker/Grafana_Prometheus/grafana_metrics.png "Grafana Metrics")
 
- **Остальные работы в репозитории!**
+**More projects in the repository!**
 
-## Структура репозитория
+## Repository Structure
 
     QA-Portfolio
     ├── .github
@@ -69,7 +70,7 @@
     │   │   ├── calc_test*.py
     │   │    ├── README.md
     │   │    └── Screenshots [3 files]
-    │   └── UI-Tests [Selenium + allure report] 
+    │   └── UI-Tests [Selenium + Allure] 
     │       └── *.py [4 page objects (POM) + tests + fixtures]
     ├── Documentation
     │   ├── calc_req.pdf
@@ -120,74 +121,69 @@
             ├── hard [3+ screenshots]
             └── README.md
 
-## Pet-Проекты  
+## Pet Projects  
 
-### Развертывание **Jira server** через **Docker compose** + **Grafana** 
-**Задачи:**  
-- Создание инфраструктуры для управления тестированием с нуля  
-- Настройка связки Jira Server 8.12 + PostgreSQL в Docker  
-- Интегрирование Xray для управления тестированием + Checklist for Jira для чек-листов
+### **Jira Server** Deployment via **Docker Compose** + **Grafana** 
+**Tasks:**  
+- Create testing management infrastructure from scratch  
+- Configure Jira Server 8.12 + PostgreSQL in Docker  
+- Integrate Xray for test management + Checklist for Jira  
 
- **Результат:**  
-  Готовое тестовое окружение  
-  Единое пространство для проектов с историей тестирования 
+**Results:**  
+  Ready-to-use testing environment  
+  Unified workspace with testing history  
 
-**Что такое XRay:**  
-  Плагин для Jira, превращающий её в систему управления тестированием (альтернатива TestRail) 
+**What is XRay:**  
+  Jira plugin that transforms it into a test management system (TestRail alternative)  
   
-**Мои задачи:**  
-- Настройка проектов в XRay  
-- Создание структурированных тест-кейсов  
-- Проведение тест-ранов с фиксацией результатов  
-- Связь баг-репортов с тест-кейсами  
+**My Responsibilities:**  
+- Configure XRay projects  
+- Create structured test cases  
+- Execute test runs with results tracking  
+- Link bug reports to test cases  
 
-**Результат:**  
-Единая среда для документации и отчетности по тестированию.
-
-**Технологии:** Docker, PostgreSQL, Jira Server, **Grafana**, **Prometheus**
+**Technologies:** Docker, PostgreSQL, Jira Server, **Grafana**, **Prometheus**
 
 [Docker + Jira](https://github.com/Ewerall/QA-Portfolio/tree/main/jira-docker)
 
-**UPD**: Были добавлены контейнеры Grafana и Prometheus для хранения и отображения метрик и логирования. Подробнее в [Jira-Docker/Grafana_Prometheus](https://github.com/Ewerall/QA-Portfolio/tree/main/Infrastructure/Jira-Docker/Grafana_Prometheus "Grafana_Prometheus")
+**UPD**: Added Grafana and Prometheus containers for metrics storage and visualization. Details in [Jira-Docker/Grafana_Prometheus](https://github.com/Ewerall/QA-Portfolio/tree/main/Infrastructure/Jira-Docker/Grafana_Prometheus "Grafana_Prometheus")
 
+### Full Testing Cycle for Python Calculator  
+**Tasks:**  
+- Develop Python/Tkinter app with intentional defects  
+- Conduct functional/non-functional testing  
+- Create test cases (Xray), detect defects, file bug reports  
+- Implement calculation verification automation (pytest)
 
-### Полный цикл тестирования Python-калькулятора  
-**Задачи:**  
-- Разработка приложения на Python/Tkinter с преднамеренными дефектами  
-- Проведение функционального/нефункционального тестирования  
-- Создание тест-кейсов (Xray), обнаружение дефектов и создание bug-репортов  
-- Реализация автоматизации проверки расчетов (pytest)
+**Results:**  
+  Documented testing process from requirements to report  
+  Template for practicing test design techniques and automation  
 
-**Результат:**  
-  Документированный процесс тестирования от требований до отчета  
-  Шаблон для тренировки техник тест-дизайна, написания тест-кейсов и создания автотестов 
+**Technologies:** Python (pytest, requests, Allure - automation; Tkinter - UI), Jira + Xray (task/test management)
 
-**Технологии:** Python(pytest, request, allure - для автотестов, Tkinter - UI), Jira + Xray (для task и test менеджмента)
+[Repository](https://github.com/Ewerall/CalcQA)
+[Jira + Test Management](https://github.com/Ewerall/QA-Portfolio/tree/main/Calc-Project)
 
-[Репозиторий](https://github.com/Ewerall/CalcQA)
-[Работа с Jira + test-managment](https://github.com/Ewerall/QA-Portfolio/tree/main/Calc-Project)
+## Other Projects
 
-## Другие работы
+- API Automation for Reqres.in [Auto-testing/API-Tests](https://github.com/Ewerall/QA-Portfolio/tree/main/Auto-testing/API-Tests "API-Tests")
+- Apache Kafka Event-Driven Testing [Auto-testing/Kafka-Tests](https://github.com/Ewerall/QA-Portfolio/tree/main/Auto-testing/Kafka-Tests "Kafka-Tests")
+- Unit Testing for "Calculator" Logic [Auto-testing/Unit-tests](https://github.com/Ewerall/QA-Portfolio/tree/main/Auto-testing/Unit-Tests "Unit-Tests")
+- 16 Test Cases for Online Audio Converter [Documentation/Test-Design](https://github.com/Ewerall/QA-Portfolio/tree/main/Documentation/Test-Design "Test-Design")
+- CI/CD Setup with GitHub Actions [Infrastructure/CI-CD](https://github.com/Ewerall/QA-Portfolio/tree/main/Infrastructure/CI-CD "CI-CD")
+- Apache Kafka Docker Deployment [Infrastructure/Kafka-Docker](https://github.com/Ewerall/QA-Portfolio/tree/main/Infrastructure/Kafka-Docker "Kafka-Docker")
+- Public API Testing with Postman/Newman [Public-APIs](https://github.com/Ewerall/QA-Portfolio/tree/main/Manual-testing/Public-APIs "Public-APIs")
+- PostgreSQL for Jira Statistics [SQL/PostgreSQL_Jira](https://github.com/Ewerall/QA-Portfolio/tree/main/SQL/PostgreSQL_Jira "PostgreSQL_Jira")
+- SQL Practice (sql-practice.com) [SQL/SQL-practice](https://github.com/Ewerall/QA-Portfolio/tree/main/SQL/SQL-practice "SQL-practice")
 
-- Автотестирование API Reqres.in [Auto-testing/API-Tests](https://github.com/Ewerall/QA-Portfolio/tree/main/Auto-testing/API-Tests "API-Tests")
-- Автотестирование Event-Driven архитектуры Apache Kafka [Auto-testing/Kafka-Tests](https://github.com/Ewerall/QA-Portfolio/tree/main/Auto-testing/Kafka-Tests "Kafka-Tests")
-- Автотестирование логики pet-проекта "Калькулятор" [Auto-testing/Unit-tests](https://github.com/Ewerall/QA-Portfolio/tree/main/Auto-testing/Unit-Tests "Unit-Tests")
-- Создание 16 тест-кейсов для онлайн аудио-конвертера с применением техник тест-дизайна [Documentation/Test-Design](https://github.com/Ewerall/QA-Portfolio/tree/main/Documentation/Test-Design "Test-Design")
-- Настройка CI/CD Github actions для pet-проекта "Калькулятор" [Infrastructure/CI-CD](https://github.com/Ewerall/QA-Portfolio/tree/main/Infrastructure/CI-CD "CI-CD")
-- Развертывание Apache Kafka через Docker [Infrastructure/Kafka-Docker](https://github.com/Ewerall/QA-Portfolio/tree/main/Infrastructure/Kafka-Docker "Kafka-Docker")
-- Тестирование публичных API с помощью Postman и создание Newman отчетов [Public-APIs](https://github.com/Ewerall/QA-Portfolio/tree/main/Manual-testing/Public-APIs "Public-APIs")
-- Практика работы с БД PostgreSQL для сбора статистика Jira [SQL/PostgreSQL_Jira](https://github.com/Ewerall/QA-Portfolio/tree/main/SQL/PostgreSQL_Jira "PostgreSQL_Jira")
-- Практика работы с БД и SQL на sql-practice.com [SQL/SQL-practice](https://github.com/Ewerall/QA-Portfolio/tree/main/SQL/SQL-practice "SQL-practice")
+## Skills Development  
+| **Mastering**                          | **Learning**                     | **Goals**                     | 
+|----------------------------------------|----------------------------------|-------------------------------|  
+| • UI Automation (Selenium, Playwright) <br>• API Automation (requests, mureq) <br>• CI/CD (GitHub Actions, Jenkins) <br>• Apache Kafka <br>• SQL (PostgreSQL, MySQL) <br>• Design Patterns (Factory, Builder, POM) <br>• Test Design Techniques | • Performance Testing (k6) <br>• Kubernetes <br>• Charles Proxy | • Gain commercial QA experience <br>• Deepen technical expertise
 
-## Стек и навыки  
-| **Осваиваю и улучшаю**   | **Планирую и изучаю**  | **Цели** | 
-|-----------------------------|--------------------------|  --------------------------|  
-| • Автоматизация UI (Selenium WebDriver, Playwright) <br>• Автоматизация API (requests, mureq) <br>• CI/CD (Github Actions, jenkins, Gitlab) <br>• Apache Kafka <br>• SQL и работа с БД (PostgreSQL, MySQL) <br>• Углубление в паттерны проектирования (Factory, builder, POM, prototype etc.) <br>• Углубление в техники тест-дизайна (Диаграмма состояний, Причинно-следственный анализ)| • Performance testing (k6) <br>• Kubernetes (Оркестрация контейнеров) <br>• Charles Proxy (Анализ запросов) | • Получить первый коммерческий опыт в QA <br>• Углубление навыков и знаний
-
-## Контакты  
+## Contact  
 -  **Email:** starere@mail.com  
 -  **Telegram:** [@Rubercore](https://t.me/Rubercore)  
--  **GitHub:** [GitHub](https://github.com/Ewerall)
+-  **GitHub:** [https://github.com/Ewerall](https://github.com/Ewerall)
 
 ![Codewars](https://github.r2v.ch/codewars?user=Ewerall&name=true&top_languages=true&stroke=%230000CD&theme=midnight_blue)
-
